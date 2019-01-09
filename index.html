@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>imhans</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="waves.png">
+
+    <!--menu bar button-->
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/semantic.js"></script>
+    <style>
+      .personal-info-image {
+        color:white;
+        margin: 10px auto 0px auto;
+        font-weight: bold;
+        padding: 0.5em;
+        font-size: 1.71428571rem;
+      }
+      .personal-contact{
+        color:white;
+        margin-left: 15px;
+      }
+    </style>
+    <h1> </h1>
+
+  </head>
+  <body>
+
+    <div class="ui container">
+        <div class="headerPart" style="display:inline-block;">
+          <h1><img class="ui middle aligned image" src="waves.png" width="50px" height="50px">
+          <span>imhans</span> </h1>
+        </div>
+
+        <div class="pusher" style="display:inline-block; float:right;">
+          <button id="menu" class="ui grey icon button">
+            <i class="bars icon"></i>
+          </button>
+
+          <!-- Site content !-->
+
+          <script>
+              $('#menu').click(function(){
+                  $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+              })
+          </script>
+        </div>
+
+        <div class="ui fluid category search" style="display:inline-block; width:375px; float:right">
+          <div class="ui icon input">
+            <input class="prompt" type="text" placeholder="Live young and wild...">
+            <i class="search icon"></i>
+          </div>
+          <div class="results"></div>
+        </div>
+
+        <div class="ui right sidebar inverted vertical menu">
+          <div class="ui left alinged container">
+
+            <div class="personal-info-image">
+              <img class="ui small circular image" src="1.jpeg"
+              style="width:175px; height:auto; margin-left:auto; margin-right:auto;">
+            </div>
+
+            <div class="personal-contact">
+              <p style="font-size:1.5em; font-weight:bold; margin-top:0px; margin-bottom:0px">Hans Yim</p>
+              <p style="font-size:1em; margin-top:2px;"> Contact: &nbsp;
+              <i class="teal github icon"></i> <a href="http://imhans.github.io" style="color:white;">Github</a> &nbsp; | &nbsp;
+              <i class="teal envelope icon"></i> <a href="mailto:hans78905@gmail.com" style="color:white;">email</a></p><br>
+            </div>
+            <div class="ui divider" style="margin-top:0px; margin-bottom:0px;"></div>
+          </div>
+
+        <a class="item" href="index.html">
+          Index
+        </a>
+
+        <div class="item">
+            <div class="ui simple dropdown">
+                Categories<i class="dropdown icon"></i>
+            </div>
+          <div class="ui container">
+            <div class="menu"> <br>
+
+              <a class="item">- Python</a>
+              <a class="item">- Java</a>
+              <a class="item">- Github</a>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="item">
+          Inspiration
+        </a>
+
+
+        </div>
+
+
+    <br><br>
+    </div>
+
+    <div class="main_image">
+      <img class="ui fluid image" src="wave.jpeg">
+      <br><br>
+    </div>
+
+    <div class="ui container">
+      <div class="ui divider"></div>
+    </div>
+
+  </body>
+</html>
