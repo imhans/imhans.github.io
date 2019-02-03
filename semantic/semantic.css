@@ -30991,7 +30991,7 @@ a.ui.card:hover,
 .ui.accordion .title .dropdown.icon,
 .ui.accordion .accordion .title .dropdown.icon {
   display: inline-block;
-  float: none;
+  float: right;
   opacity: 1;
   width: 1.25em;
   height: 1em;

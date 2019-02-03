@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir=ltr>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132063316-1"></script>
     <script>
@@ -46,38 +46,43 @@
       a:hover {
         color: black;
       }
+
     </style>
     <h1> </h1>
 
   </head>
-
   <body>
+
     <div class="ui container">
-        <div class="headerPart" style="display:inline-block;">
-          <h1><a href="index.html" sytle="color:black"><img class="ui middle aligned image" src="img/waves.png" width="50px" height="50px">
-          <span>imhans</span> </a></h1>
-        </div>
+        <div class="ui fluid three item borderless text menu">
+          <div class="search item">
+            <!-- Search Item
+            <div class="ui disabled fluid category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Live young and wild...">
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div> -->
+            <div class="item"></div>
+          </div>
+          <div class="index item">
+            <h1><a href="index.html"><img class="ui middle aligned image" src="img/waves.png" width="50px" height="50px">
+            <span>imhans</span> </a></h1>
+          </div>
 
-        <div class="pusher" style="display:inline-block; float:right;">
-          <button id="menu" class="ui grey icon button">
-            <i class="bars icon"></i>
-          </button>
+          <div class="button item">
+            <div class="item"></div>
+            <div class="ui right floated black basic icon button" id="menu" style="font-weight: bold;">
+              <i class="bars icon"></i> &nbsp Menu </div>
+          </div>
 
-          <!-- Site content -->
           <script>
               $('#menu').click(function(){
                   $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
               })
           </script>
-        </div>
-
-        <div class="ui fluid category search" style="display:inline-block; width:375px; float:right">
-          <div class="ui icon input">
-            <input class="prompt" type="text" placeholder="Live young and wild...">
-            <i class="search icon"></i>
-          </div>
-          <div class="results"></div>
-        </div>
+        </div> <!--Top Menu Area-->
 
         <div class="ui right sidebar inverted vertical menu">
           <div class="ui left alinged container">
@@ -96,21 +101,24 @@
             <div class="ui divider" style="margin-top:0px; margin-bottom:0px;"></div>
           </div>
 
-        <a class="item" href="index.html">Index </a>
+        <a class="item" href="index.html">Index</a>
 
         <div class="item">
-            <div class="ui simple dropdown">
-                Categories<i class="dropdown icon"></i>
-            </div>
-          <div class="ui container">
-            <div class="menu"> <br>
+          <div class="ui inverted fluid accordion">
+            <div class="title"> Categories  <i class="dropdown icon" style="right: 0px;"></i></div>
+            <div class="content">
               <a class="item" href="onConstruction.html">- Python</a>
               <a class="item" href="onConstruction.html">- Java</a>
               <a class="item" href="onConstruction.html">- Github</a>
             </div>
           </div>
         </div>
-        <a class="item" href="inspiration.html">Inspiration </a>
+
+        <script>
+          $('.ui.accordion').accordion();
+        </script>
+
+        <a class="item" href="inspiration.html">Inspiration</a>
       </div>
 
       <div class="ui container"> <div class="ui divider"></div></div>
